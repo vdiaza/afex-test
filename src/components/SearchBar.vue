@@ -7,7 +7,6 @@
         type="text"
         v-model="videoInput"
         placeholder="Insert youtube URL"
-        style="width: 600px"
       />
 
       <div class="add-video-btn" @click="getVideoInfo">Añadir</div>
@@ -42,6 +41,8 @@ const getVideoInfo = async () => {
   .search-container-input {
     display: flex;
     .search-input {
+      width: 600px;
+      max-width: 100%;
       background: #ffffff;
       border: 1px solid rgba(0, 0, 0, 0.3);
       border-radius: 5px 0px 0px 5px;
